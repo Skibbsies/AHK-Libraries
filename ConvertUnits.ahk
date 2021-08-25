@@ -15,6 +15,8 @@ SetWorkingDir %A_ScriptDir%
 
 ; The minute and hour parameters of the function are optional, and hence ConvertUnits(1) will return 1000 ms.
 
+; CU() can also be used instead of ConvertUnits(), to the same effect.
+
 ConvertUnits(second, minute := false, hour := false) {
 	if hour is not integer
 		return
@@ -24,4 +26,8 @@ ConvertUnits(second, minute := false, hour := false) {
 		return
 	
 	return (second * 1000) + ( (minute * 60) * 1000 ) + ( (hour * 60 * 60) * 1000 )
+}
+
+CU(second, minute := false, hour := false) {
+	return ConvertUnits(second, minute, hour)
 }
