@@ -11,7 +11,7 @@ SetWorkingDir %A_ScriptDir%
 ; Please ensure that you include the filename's extension whilst including it in your script.
 
 ; The converting function can be called using ConvertUnits(x, y, z, k), where x, y, z and k are whole integers.
-; The format of the the function is seconds, minutes, hours.
+; The format of the the function is milliseconds, seconds, minutes, hours.
 
 ; The minute, hour and second parameters of the function are optional, and hence ConvertUnits(1) will return 1000 ms.
 
